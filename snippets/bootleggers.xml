@@ -20,6 +20,10 @@
 	  fetch="https://github.com/bootleg-q/"
 	  revision="refs/heads/queso" />
 
+  <remote name="requiem"
+	  fetch="https://github.com/rasenkai/"
+	  revision="refs/heads/queso" />
+
   <!-- General -->
   <project path="art" name="art" remote="trb" />
   <project path="bionic" name="bionic" remote="trb" />
@@ -44,7 +48,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/bootleg/sepolicy" name="device_bootleg_sepolicy" remote="trb" />
+  <project path="device/bootleg/sepolicy" name="device_bootleg_sepolicy" remote="requiem" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="bootleggers" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="bootleggers" revision="queso-legacy-um"/>
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" remote="bootleggers" revision="queso-legacy"/>
@@ -103,7 +107,7 @@
   <project path="system/vold" name="system_vold" remote="bootleggers" />
 
   <!-- Vendor -->
-  <project path="vendor/bootleggers" name="vendor_bootleggers" remote="trb" />
+  <project path="vendor/bootleggers" name="vendor_bootleggers" remote="requiem" />
   <project path="vendor/support" name="vendor_support" remote="bootleggers" />
 
 </manifest>
